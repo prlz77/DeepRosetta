@@ -70,5 +70,5 @@ class Importer(BaseImporter):
 
 if __name__=='__main__':
     importer = Importer()
-    output = importer.load('/Users/prlz77/Downloads/imagenet-vgg-f.mat')
+    output = importer.load('/home/prlz77/Descargas/vgg-face.mat')
     pass

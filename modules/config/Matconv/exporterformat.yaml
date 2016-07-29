@@ -1,0 +1,29 @@
+conv:
+  type: ConvolutionLayer
+  name: name
+  weights: weights_name
+  stride: stride
+  pad: padding
+  learningRate: 0
+  weightDecay: 0
+  momentum: 0
+  opts:
+  precious:
+
+relu:
+  type: ReLULayer
+  name: name
+  leak: 0
+  precious: 0
+
+pool:
+  type: PoolingLayer
+  pad: padding
+  stride: stride
+  method: pool
+  opts:
+  precious:
+
+lrn:
+  type: LRNLayer
+  params:
