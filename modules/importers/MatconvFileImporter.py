@@ -3,9 +3,13 @@ from core.BaseImporter import BaseImporter
 from scipy.io import loadmat
 import yaml
 
+
+MATCONV_EQUIVALENCES_FILE='./modules/config/Matconv/equivalences.yaml'
+
 class Importer(BaseImporter):
-    def __init__(self):
-        with open('./modules/config/Matconv/equivalences.yaml', 'r') as infile:
+    def __init__(self,path_equivalences=MATCONV_EQUIVALENCES_FILE):
+	#TODO change this relative path
+	with open(path_equivalences, 'r') as infile:
             self.equivalences = yaml.load(infile)
         self.bottom = None
 
